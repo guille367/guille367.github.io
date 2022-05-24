@@ -1,0 +1,39 @@
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    display: block;
+    color: $font-primary;
+    font-size: 42px;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    display: block;
+    color: $font-secondary;
+    font-size: 24px;
+    margin-top: 8px;
+
+    &--clarification {
+      font-size: 20px;
+      font-style: italic;
+    }
+  }
+
+  .personal-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+      margin: 16px;
+      img {
+        height: 32px;
+      }
+    }
+  }
+}
+

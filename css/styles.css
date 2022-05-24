@@ -1,8 +1,44 @@
-.section {
+html {
+  display: grid;
+  grid-template-rows: repeat(3, 100vh);
+}
+
+section {
   height: 100vh;
+}
+
+.presentation {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.presentation__title {
+  display: block;
+  color: black;
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+.presentation__subtitle {
+  display: block;
+  color: grey;
+  font-size: 24px;
+  margin-top: 8px;
+}
+.presentation__subtitle--clarification {
+  font-size: 20px;
+  font-style: italic;
+}
+.presentation .personal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.presentation .personal-links__item {
+  margin: 16px;
+}
+.presentation .personal-links__item img {
+  height: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */
